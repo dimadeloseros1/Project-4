@@ -1,0 +1,190 @@
+<table>
+    <caption>Passengers of flight 377</caption>
+    <thead> <!-- Table header -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tfoot> <!-- Table footer -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+    </tfoot>
+    <tbody> <!-- Table body -->
+        <tr>
+            <td>Carmen</td>
+            <td>33</td>
+            <td>Spain</td>
+        </tr>
+        <tr>
+            <td>Michelle</td>
+            <td>26</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Francis</td>
+            <td>43</td>
+            <td>France</td>
+        </tr>
+        <tr>
+            <td>Martine</td>
+            <td>34</td>
+            <td>France</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>13</td>
+            <td>Australia</td>
+        </tr>
+        <tr>
+            <td>Xu</td>
+            <td>19</td>
+            <td>China</td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <caption>Passengers of flight 377</caption>
+    <thead> <!-- Table header -->
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Carmen</th>
+            <td>33</td>
+            <td>Spain</td>
+        </tr>
+        <!-- Remaining content of the table -->
+    </tbody>
+</table>
+<table>
+    <caption>Sales and purchases - 2019</caption>
+    <col>
+    <colgroup span="2"></colgroup>
+    <colgroup span="2"></colgroup>
+    <tr>
+        <td rowspan="2"></td>
+        <th colspan="2" scope="colgroup">January</th>
+        <th colspan="2" scope="colgroup">February</th>
+    </tr>
+    <tr>
+        <th scope="col">Purchase</th>
+        <th scope="col">Sale</th>
+        <th scope="col">Purchase</th>
+        <th scope="col">Sale</th>
+    </tr>
+    <tr>
+        <th scope="row">Thomas</th>
+        <td>50.000</td>
+        <td>30.000</td>
+        <td>100.000</td>
+        <td>80.000</td>
+    </tr>
+    <tr>
+        <th scope="row">Alexandra</th>
+        <td>10.000</td>
+        <td>5.000</td>
+        <td>12.000</td>
+        <td>9.000</td>
+    </tr>
+</table>
+<!-- A simple example -->
+<video src="fichiervideo.webm" autoplay poster="vignette.jpg">
+    Votre navigateur ne permet pas de lire les vidéos.
+    Mais vous pouvez toujours
+    <a href="fichiervideo.webm">la télécharger</a> !
+</video>
+<!-- Video with subtitles -->
+<video src="toto.webm">
+    <track kind="subtitles" src="toto.en.vtt" srclang="en" label="Anglais">
+    <track kind="subtitles" src="toto.sv.vtt" srclang="sv" label="Suédois">
+</video>
+
+<h2>HTML Forms test</h2>
+
+<form method="post" action="treatment.php">
+    <label for="fname">Frist name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <button>Yes it's me</button>
+</form>
+<form method="post" action="treatment.php">
+    <fieldset>
+        <legend>Your contact information</legend> <!-- Title of the fieldset -->
+        <label for="last name">What is your last name?</label>
+        <input type="text" name="last name" id="last name" />
+        <label for="first name">What is your first name?</label>
+        <input type="text" name="first name" id="first name" />
+        <label for="email">What is your email?</label>
+        <input type="email" name="email" id="email" />
+    </fieldset>
+    <fieldset>
+        <legend>Your wish</legend> <!-- Title of the fieldset -->
+        <p>
+            Make a wish that you would like to see come true:
+            <input type="radio" name="wish" value="rich" id="rich" /> <label for="rich">To be rich</label>
+            <input type="radio" name="wish" value="famous" id="famous" /> <label for="famous">To be famous</label>
+            <input type="radio" name="wish" value="intelligent" id="intelligent" /> <label for="intelligent">To be <strong>even</strong> more intelligent</label>
+            <input type="radio" name="wish" value="other" id="other" /> <label for="other">Other...</label>
+        </p>
+        <p>
+            <label for="precisions">If "Other", please explain:</label>
+            <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+        </p>
+    </fieldset>
+</form>
+
+<label for="birthday-date">Date of Birthday:</label>
+<input type="text" name="birthday-date" id="birthday-date" aria-describedby="birth-date-format" placeholder="MM/DD/YYYY" />
+<span id="birthday-date-format" class="hidden">MM/DD/YYYY</span>
+<div role="group" aria-labelledby="contact information">
+    <p id="contact information">Your contact information</p> <!-- The group made with divs and ARIA attributes -->
+
+    <label class="hidden" for="last name">What is your last name?</label>
+    <input type="text" name="last name" id="last name" />
+</div>
+
+<!-- Example of an svg image -->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="d-block" viewBox="0 0 612 612" role="img" focusable="false">
+    <title>Bootstrap</title>
+    <path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+    <path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+</svg>
+
+<form method="post" action="treatment.php">
+    <fieldset>
+        <legend>Your contact information</legend> <!-- Title of the fieldset -->
+        <label for="last name">What is your last name?</label>
+        <input type="text" name="last name" id="last name" />
+        <label for="first name">What is your first name?</label>
+        <input type="text" name="first name" id="first name" />
+        <label for="email">What is your email?</label>
+        <input type="email" name="email" id="email" />
+    </fieldset>
+    <fieldset>
+        <legend>Your wish</legend> <!-- Title of the fieldset -->
+        <p>
+            Make a wish that you would like to see come true:
+            <input type="radio" name="wish" value="rich" id="rich" /> <label for="rich">To be rich</label>
+            <input type="radio" name="wish" value="famous" id="famous" /> <label for="famous">To be famous</label>
+            <input type="radio" name="wish" value="intelligent" id="intelligent" /> <label for="intelligent">To be <strong>even</strong> more intelligent</label>
+            <input type="radio" name="wish" value="other" id="other" /> <label for="other">Other...</label>
+        </p>
+        <p>
+            <label for="precisions">If "Other", please explain:</label>
+            <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+        </p>
+    </fieldset>
+</form>
+
+
