@@ -305,6 +305,7 @@ h2 {
     margin-left: 0;
     display: flex;
     justify-content: space-between;
+    padding: 2%;
 }
 
 
@@ -928,7 +929,7 @@ h4 {
     background-image: url("img/atlanta\ made\ sign_11zon.jpg");
 }
 
-.bg-atlanta-20made-20sign-20orange{background-image:url("img/atlanta\ made\ sign\ orange-min.jpg")}
+.bg-atlanta-20made-20sign-20orange{background-image:url("img/atlanta\ made\ sign\ orange_11zon.jpg")}
 
 @media (max-width: 1024px) {
     .bloc {
