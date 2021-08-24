@@ -505,6 +505,16 @@ nav .caret {
 .btn {
     margin: 0 5px 5px 0;
 }
+blockquote {
+    margin: 0 auto;
+    font-size: 15px;
+    width: 80%;
+    border-left: none;
+    line-height: 25px;
+    color: #000000 !important;
+    max-width: 760px;
+    text-align: center;
+}
 
 .btn.pull-right {
     margin: 0 0 5px 5px;
@@ -1037,6 +1047,7 @@ h4 {
         text-align: left;
         padding-left: 15px;
         width: 100%;
+        margin-bottom: 0;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -1157,4 +1168,19 @@ h4 {
     }
 
 
+}
+
+.col-sm-4 ul {
+    
+    color: #000000 !important;
+    align-items: center;
+    justify-content: center;
+    
+}
+.col-sm-4 a {
+    color: #FFFFFF !important;
+}
+.row-2 {
+    display: inline-flex;
+    justify-content: center;
 }
