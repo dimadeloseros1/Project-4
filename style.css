@@ -455,12 +455,8 @@ h2 {
     
     
 }
-.col-sm-6 p {
-    margin: 40px 20px 0px;
-}
-.col-sm-6 h2 {
-    margin: 20px;
-}
+
+
 
 .nav > li > .dropdown a {
     background: none!important;
